@@ -46,6 +46,40 @@
             justify-content: center;
             align-items: center;
         }
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .product-item {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-name {
+                font-size: 16px;
+            }
+
+            .product-description {
+                font-size: 14px;
+            }
+
+            .product-price {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -64,7 +98,7 @@
     <form action="https://yandex.ru/search/" method="get">
         <div class="product-grid">
             <div class="product-item">
-                <img src="ball1.png" >
+                <img src="ball1.png" class="img-fluid" >
                 <div class="product-name">BALL EURO 2016</div>
                 <div class="product-description">Мяч к Евро 2016</div>
                 <div class="product-price">Цена 1800 р.</div>
@@ -73,7 +107,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="ball2.png" >
+                <img src="ball2.png" class="img-fluid" >
                 <div class="product-name">BALL WORLD CUP 2022</div>
                 <div class="product-description">Мяч к Чемпионату миру в катаре</div>
                 <div class="product-price">Цена 2900 р.</div>
@@ -82,7 +116,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="ball3.png" >
+                <img src="ball3.png" class="img-fluid">
                 <div class="product-name">BALL CHAMPIONS LEAGUE</div>
                 <div class="product-description">Мяч Лиги Чемпионов</div>
                 <div class="product-price">Цена 3700 р.</div>
@@ -91,7 +125,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="ball4.png">
+                <img src="ball4.png" class="img-fluid">
                 <div class="product-name">BALL JABULANI</div>
                 <div class="product-description">Мяч к Чемпионату Мира</div>
                 <div class="product-price">Цена 4200 р.</div>
@@ -100,7 +134,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="ball5.png">
+                <img src="ball5.png" class="img-fluid">
                 <div class="product-name">BALL APL 2022-2023</div>
                 <div class="product-description">Футюльный мяч АПЛ</div>
                 <div class="product-price">Цена 5300 р.</div>
@@ -109,7 +143,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="ball6.png" >
+                <img src="ball6.png" class="img-fluid">
                 <div class="product-name">BALL BUNDESLIGA</div>
                 <div class="product-description">Футбольный мяч Бундеслиги</div>
                 <div class="product-price">Цена 3400 р.</div>
@@ -118,7 +152,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="d.jpg" >
+                <img src="d.jpg" class="img-fluid">
                 <div class="product-name">Доставка</div>
                 <div class="product-order">
                 <input type="radio" id="fast" name="delivery" checked>
@@ -129,7 +163,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="j.jpg" >
+                <img src="j.jpg" class="img-fluid">
                 <div class="product-order">
                     <br><br>
                     <input type="text" id="review" name="review">   
