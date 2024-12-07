@@ -1,0 +1,50 @@
+[
+    {
+      "id": "1",
+      "title": "BALL EURO 2016",
+      "vendor_code": "4445e",
+      "description": "Мяч к Евро 2016",
+      "price": 1800,
+      "img": "ball1.png"
+    },
+    {
+      "id": "2",
+      "title": "BALL WORLD CUP 2022",
+      "vendor_code": "4446e",
+      "description": "Мяч к Чемпионату миру в катаре",
+      "price": 2900,
+      "img": "ball2.png"
+    },
+    {
+      "id": "3",
+      "title": "BALL CHAMPIONS LEAGUE",
+      "vendor_code": "4447e",
+      "description": "Мяч Лиги Чемпионов",
+      "price": 3700,
+      "img": "ball3.png"
+    },
+    {
+      "id": "4",
+      "title": "BALL JABULANI",
+      "vendor_code": "4448e",
+      "description": "Мяч к Чемпионату Мира",
+      "price": 4200,
+      "img": "ball4.png"
+    },
+    {
+      "id": "5",
+      "title": "BALL APL 2022-2023",
+      "vendor_code": "4449e",
+      "description": "Футюльный мяч АПЛ",
+      "price": 5300,
+      "img": "ball5.png"
+    },
+    {
+      "id": "6",
+      "title": "BALL BUNDESLIGA",
+      "vendor_code": "4450e",
+      "description": "Футбольный мяч Бундеслиги",
+      "price": 3400,
+      "img": "ball6.png"
+    }
+  ]
