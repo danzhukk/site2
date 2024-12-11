@@ -31,11 +31,9 @@ async function getResponce() {
     let responce = await fetch("shop.json")
 
     let content = await responce.text()
-    console.log(content)
     content = JSON.parse(content)
     content = content.splice(0, 6)
 
-    console.log(content)
     let key
 
     content_price = content.sort((a, b) => a.price - b.price);
@@ -52,7 +50,6 @@ async function getResponce() {
         );
 
     });
-    console.log(content_filter);
 
     let node_for_insert = document.getElementById("node_for_insert")
 
