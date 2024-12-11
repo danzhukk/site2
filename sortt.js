@@ -104,7 +104,6 @@ async function getResponce1() {
         );
 
     });
-    console.log(content_filter);
 
     let node_for_insert = document.getElementById("node_for_insert")
     for (key in content_filter) {
