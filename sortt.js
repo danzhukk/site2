@@ -1,32 +1,29 @@
 function sort() {
     let price = document.getElementById("price")
     let title = document.getElementById("title")
+    document.getElementById('node_for_insert').innerHTML = '';
     if (price.checked) {
-        document.getElementById('node_for_insert').innerHTML = '';
-        getResponce()
+        getResponceByPrice()
     }
     if (title.checked) {
-        document.getElementById('node_for_insert').innerHTML = '';
-        getResponce1()
+        getResponceByTitle()
     }
 }
 
 function search() {
-
+    document.getElementById('node_for_insert').innerHTML = '';
     if (price.checked) {
-        document.getElementById('node_for_insert').innerHTML = '';
-        getResponce()
+        getResponceByPrice()
     }
 
     if (title.checked) {
-        document.getElementById('node_for_insert').innerHTML = '';
-        getResponce1()
+        getResponceByTitle()
     }
 }
 
 
 
-async function getResponce() {
+async function getResponceByPrice() {
 
     let responce = await fetch("shop.json")
 
@@ -67,7 +64,7 @@ async function getResponce() {
     }
 
 }
-async function getResponce1() {
+async function getResponceByTitle() {
 
     let responce = await fetch("shop.json")
 
