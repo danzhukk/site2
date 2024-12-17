@@ -29,7 +29,6 @@ async function getResponceByPrice() {
 
     let content = await responce.text()
     content = JSON.parse(content)
-    content = content.splice(0, 6)
 
     let key
 
@@ -43,7 +42,7 @@ async function getResponceByPrice() {
         return (
             product.title.toLowerCase().includes(word) ||
             product.description.toLowerCase().includes(word) ||
-            product.price.toString().includes(word)
+            product.price.toString().includes(word)      
         );
 
     });
@@ -69,11 +68,8 @@ async function getResponceByTitle() {
     let responce = await fetch("shop.json")
 
     let content = await responce.text()
-    console.log(content)
     content = JSON.parse(content)
-    content = content.splice(0, 6)
 
-    console.log(content)
     let key
 
     content_title = content.sort((a, b) => {
